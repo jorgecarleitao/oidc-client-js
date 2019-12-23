@@ -27,13 +27,13 @@ Oidc.Log.logger = console;
 Oidc.Log.level = Oidc.Log.WARN;
 
 var settings = {
-    authority: 'http://localhost:15000/oidc',
-    client_id: 'js.tokenmanager',
-    redirect_uri: 'http://localhost:15000/user-manager-sample.html',
-    post_logout_redirect_uri: 'http://localhost:15000/user-manager-sample.html',
-    response_type: 'id_token token',
-    scope: 'openid email roles',
-    
+    authority: 'https://login.microsoftonline.com/647a7e9b-d699-4ff6-9da6-e6468f7a6271/v2.0/.well-known/openid-configuration',
+    client_id: '5d7f3e13-de5f-408d-a099-3b287449ad40',
+    redirect_uri: 'http://localhost:3000/user-manager-sample.html',
+    post_logout_redirect_uri: 'http://localhost:3000/user-manager-sample.html',
+    response_type: 'token',
+    scope: 'api://5d7f3e13-de5f-408d-a099-3b287449ad40/access',
+
     popup_redirect_uri:'http://localhost:15000/user-manager-sample-popup-signin.html',
     popup_post_logout_redirect_uri:'http://localhost:15000/user-manager-sample-popup-signout.html',
     
